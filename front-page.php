@@ -1014,7 +1014,7 @@ get_header(); ?>
             '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DEPSt9EzlXD/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>',
             '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C2Oz-VRyAEb/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>',
             '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C8Efk9DyqlQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>',
-            '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CRfCfoIJ0ij/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>'
+            // '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CRfCfoIJ0ij/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>'
           ];
           // 配列をランダムにシャッフル
           shuffle($insta_embeds);
