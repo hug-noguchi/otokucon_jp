@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+.application .form__table {
+  border-top: 1px solid #c8c8c8;
+  font-family: "Noto Sans JP, sans-serif";
+  font-size: 0.94rem;
+  width: 100%;
+}
+.application .form__table tr:nth-child(4) .form__head,
+.application .form__table tr:last-child .form__head {
+  justify-content: left;
+}
+.application .form__table th,
+.application .form__table td {
+  border-bottom: 1px solid #c8c8c8;
+  padding: 2.75rem 0;
+}
+@media screen and (max-width: 767px) {
+  .application .form__table th,
+  .application .form__table td {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    padding-left: 0 !important;
+  }
+}
+.application .form__table th {
+  background-color: #f5f5f5;
+  width: 338px;
+}
+@media screen and (max-width: 959px) {
+  .application .form__table th {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .application .form__table th {
+    width: 100%;
+  }
+}
+.application .form__table td {
+  padding-left: 2.125rem;
+}
+.application .form__table tr:last-child th {
+  vertical-align: baseline;
+}
+.application .form__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 26px 0;
+}
+.application .form__head span {
+  background-color: #fff;
+  border: 1px solid #d40000;
+  border-radius: 2px;
+  color: #d40000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: normal;
+  height: 24px;
+  width: 80px;
+}
+.application .form__table {
+  margin-top: 50px;
+}
+.application .form__table input {
+  height: 50px;
+}
+.application .form__table input,
+.application .form__table textarea {
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 0.94rem;
+  width: 100%;
+}
+
+.application .form__table .time {
+  position: relative;
+}
+
+.application .form__table .time .date::after {
+  background: url(https://otokucon.net/wp-content/themes/otokukon/assets/images/date.svg) no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  right: 54%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.application .form__table .time .hope_month::after {
+  background: url(https://otokucon.net/wp-content/themes/otokukon/assets/images/date.svg) no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 49%;
+  right: 59%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .application .form__table #month {
+    margin-left: 0;
+  }
+}
+
+.application .form__table #month,
+.application .form__table #people {
+  width: 40% !important;
+}
+
+.application .form__table .time .hope {
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.application .form__table .time input {
+  width: 55%;
+  margin-left: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .application .form__table .time .hope_month {
+    width: 100%;
+  }
+  .application .form__table .time .hope_month::after {
+    right: 8% !important;
+  }
+  .application .form__table #month {
+    width: 90% !important;
+  }
+  .application .form__table .people_box {
+    margin-left: 20px;
+  }
+  .application .form__table #people {
+    width: 88% !important;
+    display: inline-block;
+  }
+  .application .form__table input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .application .form__table .time .hope input,
+  .application .form__table .time .hope2 input {
+    margin-left: 10px !important;
+    width: 78% !important;
+  }
+  .application .form__table .time .hope::after {
+    top: 31% !important;
+    right: 9% !important;
+  }
+  .application .form__table .time .hope2::after {
+    top: 69% !important;
+    right: 9% !important;
+  }
+  .application .form__table textarea {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.application .form__table .time span {
+  padding-right: 20px;
+}
+
+.application .form__table .time .hope::after {
+  background: url(https://otokucon.net/wp-content/themes/otokukon/assets/images/date.svg) no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 35%;
+  right: 32%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.application .form__table .time .hope2::after {
+  background: url(https://otokucon.net/wp-content/themes/otokukon/assets/images/date.svg) no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 65%;
+  right: 32%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.application .contact__button {
+  width: 702px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/*# sourceMappingURL=contact.css.map */
