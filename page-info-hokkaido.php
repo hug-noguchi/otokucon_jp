@@ -88,11 +88,8 @@
               <div class="p-target__inner">
                 <p class="p-target__head"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/present-icon.png" alt="キャンペーンに応募する"></span> キャンペーンに<br class="u-desktop">応募する</p>
                 <p class="p-target__foot">期間限定<br class="u-desktop"><span>：</span>
-                  <?php if (strtotime(date('Y-m-d H:i')) < strtotime('2024-10-15 15:00')) { ?>
-                    2024.10.15
-                  <?php } else { ?>
-                    2024.10.31
-                  <?php } ?></p>
+                  <?php get_template_part('template/target_sp'); ?>
+                </p>
               </div>
             </a>
           </li>
@@ -105,7 +102,7 @@
   <?php while (have_posts()) : the_post(); ?>
 
   <?php
-    $page_id = get_page_by_path('lp/info-lp');
+    $page_id = get_page_by_path('/info-hokkaido');
     $page = get_post( $page_id );
       echo $page -> post_content;
   ?>
@@ -118,8 +115,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="script.js"></script>
   <script src="https://otokucon.net/wp-content/themes/otokukon/assets/js/jquery.fatNav.min.js" type="text/javascript"></script>
@@ -158,4 +153,4 @@
     });
   </script>
 
-<?php get_footer("lp");?>
+<?php get_footer("hokkaido");?>

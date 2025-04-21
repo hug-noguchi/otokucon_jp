@@ -209,9 +209,9 @@
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal01">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img01.jpg" alt="アールベルアンジェ札幌">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sapporo01.jpg" alt="アールベルアンジェ札幌">
                         </a>
-                        <p class="area">愛知県名古屋市</p>
+                        <p class="area">北海道札幌市</p>
                         <div class="p-wedding-card__body">
                             <h3 class="p-wedding-card__title">アールベルアンジェ札幌</h3>
                             <div class="p-wedding-card__btn">詳しくはこちら</div>
@@ -226,13 +226,13 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama01.jpg" alt="ガーデンテラス東山">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sapporo01.jpg" alt="アールベルアンジェ札幌">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama02.jpg" alt="ガーデンテラス東山">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sapporo02.jpg" alt="アールベルアンジェ札幌">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama03.jpg" alt="ガーデンテラス東山">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sapporo03.jpg" alt="アールベルアンジェ札幌">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -241,9 +241,9 @@
                                 </div>
                                 <div class="p-wedding-card__block">
                                     <div class="p-wedding-card__modalbody">
-                                        <h3 class="p-wedding-card__modaltitle">ガーデンテラス東山</h3>
+                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ札幌</h3>
                                         <p class="p-wedding-card__modaltext">
-                                            緑を見渡しながら挙式を執り行うことができる真っ白なチャペル。披露宴会場は、壁三面を使ったプロジェクションマッピングなど、多彩な演出が可能です。
+                                          16mにもなるバージンロードに大スケールの礼拝堂ではあたたかなキャンドルが灯り、パイプオルガンの音色が響き渡ります。また、ガーデンパーティではサプライズ入場や花火など多彩な演出を楽しめます！おふたりの幸せを分かち合う、ぴったりの空間です。
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
@@ -257,11 +257,11 @@
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal02">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img02.jpg" alt="アールベルアンジェ四日市">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/muroran01.jpg" alt="アール・ベル・アンジェ室蘭">
                         </a>
-                        <p class="area">三重県四日市</p>
+                        <p class="area">北海道室蘭市</p>
                         <div class="p-wedding-card__body">
-                            <h3 class="p-wedding-card__title">アールベルアンジェ四日市</h3>
+                            <h3 class="p-wedding-card__title">アール・ベル・アンジェ室蘭</h3>
                             <div class="p-wedding-card__btn">詳しくはこちら</div>
                         </div>
                     </div>
@@ -274,13 +274,13 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yokkaichi01.jpg" alt="アールベルアンジェ四日市">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/muroran01.jpg" alt="アール・ベル・アンジェ室蘭">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yokkaichi02.jpg" alt="アールベルアンジェ四日市">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/muroran02.jpg" alt="アール・ベル・アンジェ室蘭">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yokkaichi03.jpg" alt="アールベルアンジェ四日市">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/muroran03.jpg" alt="アール・ベル・アンジェ室蘭">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -289,13 +289,14 @@
                                 </div>
                                 <div class="p-wedding-card__block">
                                     <div class="p-wedding-card__modalbody">
-                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ四日市</h3>
+                                        <h3 class="p-wedding-card__modaltitle">アール・ベル・アンジェ室蘭</h3>
                                         <p class="p-wedding-card__modaltext">
-                                            2020年にリニューアルした大人気の貸切邸宅。自然光が降り注ぐ大聖堂に、25mものバージンロードが魅力的。フォトジェニックなプライベートガーデン付きの会場です。
+                                          (収容人数：10～180名)<br>
+                                          開放的なプール付きガーデンも備えるオシャレな一軒家が、ウエディング当日はおふたりとゲストの貸し切りに。感動的なセレモニーとなる【セイント・ニコラス教会】は収容人数104名。
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-pare03" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare02" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -305,11 +306,11 @@
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal03">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img03.jpg" alt="ベルクラシック神戸">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hakodate01.jpg" alt="ベルクラシック函館">
                         </a>
-                        <p class="area">兵庫県神戸市</p>
+                        <p class="area">北海道函館市</p>
                         <div class="p-wedding-card__body">
-                            <h3 class="p-wedding-card__title">ベルクラシック神戸</h3>
+                            <h3 class="p-wedding-card__title">ベルクラシック函館</h3>
                             <div class="p-wedding-card__btn">詳しくはこちら</div>
                         </div>
                     </div>
@@ -322,13 +323,13 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kobe01.jpg" alt="ベルクラシック神戸">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hakodate01.jpg" alt="ベルクラシック函館">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kobe02.jpg" alt="ベルクラシック神戸">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hakodate02.jpg" alt="ベルクラシック函館">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kobe03.jpg" alt="ベルクラシック神戸">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hakodate03.jpg" alt="ベルクラシック函館">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -337,13 +338,14 @@
                                 </div>
                                 <div class="p-wedding-card__block">
                                     <div class="p-wedding-card__modalbody">
-                                        <h3 class="p-wedding-card__modaltitle">ベルクラシック神戸</h3>
+                                        <h3 class="p-wedding-card__modaltitle">ベルクラシック函館</h3>
                                         <p class="p-wedding-card__modaltext">
-                                            好立地な都心の中にリゾートのような青い空と緑に囲まれたガーデンが大人気。光のチャペルは大きなクリスタルシャンデリアに、ガラスのバージンロードがとても幻想的です。
+                                          (収容人数：10～200名)<br>
+                                          函館の中心地にあるためアクセスが便利。異国情緒あふれるヨーロッパ様式の重厚な建物にくわえ、館内には噴水付きの中庭とイタリアンレストランがあり、非現実的な空間が人気です。
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-pare04" class="p-wedding-card__modalForm js-pagelink js-net03" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare03" class="p-wedding-card__modalForm js-pagelink js-net03" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -353,11 +355,11 @@
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal04">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img04.jpg" alt="ベルクラシック姫路">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tomakomai01.jpg" alt="アールベルアンジェ苫小牧">
                         </a>
-                        <p class="area">兵庫県姫路市</p>
+                        <p class="area">北海道苫小牧市</p>
                         <div class="p-wedding-card__body">
-                            <h3 class="p-wedding-card__title">ベルクラシック姫路</h3>
+                            <h3 class="p-wedding-card__title">アールベルアンジェ苫小牧</h3>
                             <div class="p-wedding-card__btn">詳しくはこちら</div>
                         </div>
                     </div>
@@ -370,13 +372,13 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/himeji01.jpg" alt="ベルクラシック姫路">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tomakomai01.jpg" alt="アールベルアンジェ苫小牧">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/himeji02.jpg" alt="ベルクラシック姫路">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tomakomai02.jpg" alt="アールベルアンジェ苫小牧">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/himeji03.jpg" alt="ベルクラシック姫路">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tomakomai03.jpg" alt="アールベルアンジェ苫小牧">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -385,13 +387,14 @@
                                 </div>
                                 <div class="p-wedding-card__block">
                                     <div class="p-wedding-card__modalbody">
-                                        <h3 class="p-wedding-card__modaltitle">ベルクラシック姫路</h3>
+                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ苫小牧</h3>
                                         <p class="p-wedding-card__modaltext">
-                                            純白のドレスも輝きを増す、幻想的なガラスのバージンロードが魅力的。ナチュラルガーデンのある一軒家貸切ウエディングが可能です。
+                                          (収容人数：10～180名)<br>
+                                          光・水・木・緑と自然観を取り込み、両サイドは木のユニークな流線型のデザインチャペル！遊び心と居心地の上質空間を創造したバンケットホール！自然光が溢れる全天候型ガーデンテラス。
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-pare05" class="p-wedding-card__modalForm js-pagelink js-net04" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare04" class="p-wedding-card__modalForm js-pagelink js-net04" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -809,4 +812,4 @@
     </script>
   </main>
 
-<?php get_footer("lp"); ?>
+<?php get_footer("hokkaido"); ?>

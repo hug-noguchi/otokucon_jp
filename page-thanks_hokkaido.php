@@ -7,5 +7,5 @@
         </p>
     </div>
 </div>
- <?php echo do_shortcode('[mwform_formkey key="387"]'); ?>
-<?php get_footer();
+ <?php echo do_shortcode('[mwform_formkey key="944"]'); ?>
+<?php get_footer('hokkaido');
