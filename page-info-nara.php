@@ -88,6 +88,7 @@
                 <p class="p-target__head"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/present-icon.png" alt="キャンペーンに応募する"></span> キャンペーンに<br class="u-desktop">応募する</p>
                 <p class="p-target__foot">期間限定<br class="u-desktop"><span>：</span>
                   <?php get_template_part('template/target_sp'); ?>
+                </p>
               </div>
             </a>
           </li>
