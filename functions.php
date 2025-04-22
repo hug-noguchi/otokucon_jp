@@ -243,6 +243,26 @@ function add_mwform_validation_rule($Validation, $data) {
 add_filter( 'mwform_admin_mail_mw-wp-form-7', 'autoback_my_mail_common', 10, 3 );
 add_filter( 'mwform_admin_mail_mw-wp-form-387', 'autoback_my_mail_common', 10, 3 );
 
+//北海道婚用メールアドレス振り分け　
+function autoback_my_mail_hokkaido($Mail_raw, $values, $Data)
+{
+	if ($Data->get('radio-name') == 'アール・ベル・アンジェ室蘭') {
+		$Mail_raw->to = 'miura@bellco.co.jp,kaneda@bellclassic.co.jp,muroran@bellclassic.co.jp,mogi@bellclassic.co.jp';
+		$Mail_raw->cc = 'ebisawa@hershe.co.jp,mayu@hershe.co.jp,higa_sa@hershe.jp,maeda_na@hershe.jp,morito@hershe.co.jp';
+	} else if ($Data->get('radio-name') == 'ベルクラシック函館') {
+		$Mail_raw->to = 'miura@bellco.co.jp,kaneda@bellclassic.co.jp,sato@bellclassic.co.jp,hakodate@bellclassic.co.jp';
+		$Mail_raw->cc = 'ebisawa@hershe.co.jp,mayu@hershe.co.jp,higa_sa@hershe.jp,maeda_na@hershe.jp,morito@hershe.co.jp';
+	} else if ($Data->get('radio-name') == 'アールベルアンジェ苫小牧') {
+		$Mail_raw->to = 'miura@bellco.co.jp,kaneda@bellclassic.co.jp,hatanaka@bellclassic.co.jp,whitepark@tea.ocn.ne.jp,tomakomai@bellclassic.co.jp';
+		$Mail_raw->cc = 'ebisawa@hershe.co.jp,mayu@hershe.co.jp,higa_sa@hershe.jp,maeda_na@hershe.jp,morito@hershe.co.jp';
+	} else if ($Data->get('radio-name') == 'アールベルアンジェ札幌') {
+		$Mail_raw->to = 'miura@bellco.co.jp, kaneda@bellclassic.co.jp, lavert@bellclassic.co.jp, harada@bellclassic.co.jp';
+		$Mail_raw->cc = 'ebisawa@hershe.co.jp,mayu@hershe.co.jp,higa_sa@hershe.jp,maeda_na@hershe.jp,morito@hershe.co.jp';
+	}
+	return $Mail_raw;
+}
+add_filter('mwform_admin_mail_mw-wp-form-944', 'autoback_my_mail_hokkaido', 10, 3);
+
 
 function my_mail( $mail_raw, $values, $data ) {
 	if ( empty( $values['text_req'] ) ) {
@@ -253,7 +273,10 @@ function my_mail( $mail_raw, $values, $data ) {
 
 add_filter( 'mwform_auto_mail_raw_mw-wp-form-7', 'my_mail', 10, 3 );
 add_filter( 'mwform_admin_mail_raw_mw-wp-form-7', 'my_mail', 10, 3 );
-
+add_filter( 'mwform_auto_mail_raw_mw-wp-form-387', 'my_mail', 10, 3 );
+add_filter( 'mwform_admin_mail_raw_mw-wp-form-387', 'my_mail', 10, 3 );
+add_filter( 'mwform_auto_mail_raw_mw-wp-form-944', 'my_mail', 10, 3 );
+add_filter( 'mwform_admin_mail_raw_mw-wp-form-944', 'my_mail', 10, 3 );
 
 //WordPressのコードエディタでspanタグを消さない設定
 function my_tiny_mce_before_init( $init_array ) {
