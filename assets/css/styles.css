@@ -3686,7 +3686,8 @@ a:hover {
 }
 .from_instagram_list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 .from_instagram_list li iframe {
   width: 100%;
