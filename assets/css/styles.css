@@ -3721,4 +3721,186 @@ a:hover {
   }
 }
 
+/* パパママLP */
+#family .p-mainview__color {
+  color: #fc7381;
+}
+#family .chanpaign_date_box {
+  color: #fc7381;
+  background-color: #ffe2df;
+}
+#family .p-special {
+  background-color: #fff1ef;
+}
+#family .p-special__copy {
+  color: #272727;
+}
+#family .p-special__benefit {
+  color: #fc7381;
+}
+#family .p-special-card__img_kids {
+  max-width: 461px;
+  margin: 40px auto;
+}
+#family .p-wedding__copy {
+  color: #272727;
+}
+#family .p-wedding-card__btn {
+  background-color: #fc7381;
+}
+#family .p-case {
+  background-color: #fff1ef;
+}
+#family .p-case__copy {
+  color: #272727;
+}
+#family .p-case-media__text span {
+  color: #fc7381;
+  background: linear-gradient(transparent 65%, rgba(252, 115, 129, 0.15) 65%);
+}
+#family .p-flow__copy {
+  color: #272727;
+}
+#family .p-flow-card__copy {
+  color: #fc7381;
+  border-bottom: 1px solid #eee9d8;
+}
+#family .p-flow-card {
+  border: 4px solid #ffe2df;
+}
+#family .p-flow-card::after {
+  border-top: 0.6875rem solid #ffe2df;
+}
+#family .p-qa__copy {
+  color: #272727;
+  margin-top: unset;
+}
+#family .p-qa {
+  background-color: #fff1ef;
+}
+#family .p-qa-media__inner {
+  border: 4px solid #ffe2df;
+}
+#family .p-qa__title {
+  width: 9.025rem;
+}
+#family .p-qa-media__answer {
+  color: #fc7381;
+}
+#family .p-voice__copy {
+  color: #272727;
+  margin-top: unset;
+  margin-bottom: 3rem;
+}
+#family .p-voice {
+  background-color: #fff1ef;
+}
+#family .p-voice__title {
+  width: 9.025rem;
+}
+#family .p-voice-card {
+  border: 4px solid #ffe2df;
+}
+#family .p-voice-card__title {
+  color: #fc7381;
+  text-align: left;
+  background-image: unset;
+  display: inline-block;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: unset;
+}
+#family .p-voice-card__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #272727;
+  text-align: left;
+}
+#family .p-voice-card__text span {
+  color: #ac923d;
+}
+#family .p-voice__list {
+  display: unset;
+}
+#family .p-voice__list li {
+  width: unset;
+}
+#family .p-voice-card__text span {
+  color: #ac923d;
+}
+#family .p-contact {
+  background-color: unset;
+}
+#family .p-contact__title {
+  width: 17.8125rem;
+}
+#family .p-contact__copy {
+  color: #272727;
+}
+#family .p-contact-radio__name {
+  background-color: #fc7381;
+}
+#family .p-contact__name {
+  background-color: #fc7381;
+}
+#family .p-contact-text {
+  border: 1px solid #fc7381;
+}
+#family .c-required {
+  color: #fc7381;
+}
+#family .p-contact-radio__block {
+  border: 1px solid #fc7381;
+}
+@media screen and (min-width: 768px) {
+  #family .p-special__title {
+    width: 18.5rem;
+  }
+  #family .p-special__item:nth-of-type(12),
+  #family .p-special__item:nth-of-type(14) {
+    margin-top: 1.25rem;
+  }
+  #family .p-qa__copy {
+    font-size: 1.875rem;
+  }
+  #family .p-voice__items:not(:first-child) {
+    margin-top: 3.125rem;
+  }
+  #family .p-voice-card__img {
+    max-width: 393px;
+    width: 100%;
+    margin-top: unset;
+  }
+  #family .p-voice-card__title.sp {
+    display: none;
+  }
+  #family .p-voice__item {
+    max-width: unset;
+    width: unset;
+    display: flex;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #family .p-flow__copy {
+    margin-top: unset;
+  }
+  #family .p-voice-card {
+    padding: 27px 17px;
+  }
+  #family .p-voice-card__body {
+    padding: unset;
+  }
+  #family .p-voice-card__title {
+    height: unset;
+  }
+  #family .p-voice-card__title.pc {
+    display: none;
+  }
+  #family .p-voice-card__subtitle {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
