@@ -3738,6 +3738,9 @@ a:hover {
 #family .p-special__benefit {
   color: #fc7381;
 }
+#family .p-special__text {
+  color: #fc7381;
+}
 #family .p-special-card__img_kids {
   max-width: 461px;
   margin: 40px auto;
@@ -3828,8 +3831,22 @@ a:hover {
 #family .p-voice-card__text span {
   color: #ac923d;
 }
+#family .p-application__copy {
+  color: #272727;
+}
+#family .p-application-card__title {
+  background-color: #fc7381;
+}
+#family .p-application-card__toptext {
+  border: unset;
+  background-color: #fff1ef;
+}
+#family .p-application-card__box {
+  border: unset;
+  background-color: #fff1ef;
+}
 #family .p-contact {
-  background-color: unset;
+  background-color: #fff1ef;
 }
 #family .p-contact__title {
   width: 17.8125rem;
@@ -3844,13 +3861,13 @@ a:hover {
   background-color: #fc7381;
 }
 #family .p-contact-text {
-  border: 1px solid #fc7381;
+  border: unset;
 }
 #family .c-required {
   color: #fc7381;
 }
 #family .p-contact-radio__block {
-  border: 1px solid #fc7381;
+  border: unset;
 }
 @media screen and (min-width: 768px) {
   #family .p-special__title {
@@ -3880,11 +3897,35 @@ a:hover {
     display: flex;
     padding: 30px;
   }
+  #family .p-application {
+    padding: 3.0625rem 0 3.9375rem;
+  }
+  #family .p-application__inner.l-inner {
+    max-width: 53.8125rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  #family .p-special__text {
+    letter-spacing: -1.4px;
+  }
+  #family .p-special__foot {
+    letter-spacing: -0.04em;
+  }
+  #family .p-flow__title {
+    width: 6.825rem;
+  }
   #family .p-flow__copy {
     margin-top: unset;
+  }
+  #family .p-flow-card__text {
+    text-align: left;
+  }
+  #family .p-qa__title {
+    width: 7.025rem;
+  }
+  #family .p-voice__title {
+    width: 7.425rem;
   }
   #family .p-voice-card {
     padding: 27px 17px;
@@ -3894,12 +3935,19 @@ a:hover {
   }
   #family .p-voice-card__title {
     height: unset;
+    letter-spacing: -1px;
   }
   #family .p-voice-card__title.pc {
     display: none;
   }
   #family .p-voice-card__subtitle {
     font-size: 14px;
+  }
+  #family .p-voice-card__text {
+    font-size: 16px;
+  }
+  #family .p-application-card__toptext {
+    letter-spacing: -0.09em;
   }
 }
 
