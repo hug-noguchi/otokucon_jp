@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
   <style>
     .mw_wp_form .horizontal-item {
       margin-left: 0 !important;
@@ -16,11 +15,32 @@
       }
     }
   </style>
-
-  <div class="countdown-box" id="lp-box">
+  <div class="countdown-box sp">
+    <?php?>
     <?php get_template_part('template/target'); ?>
+    <div class="number_apply add-control">
+      <div class="action-close">
+        <input type="checkbox" class="checkbox" id="close" name="close" /><label for="close" class="btn">×</label>
+        <p class="box">本日、<span id="numberDisplay"></span>人のネット応募が入りました</p>
+      </div>
+    </div>
+    <div id="countdownArea" class="countdown sp view_timer" data-end-date="2025/7/15 23:59:59">
+      <span class="countdown-tx deadline">締め切りまであと</span>
+      <span id="countdown-day" class="countdown-digit"></span><span class="txt">日</span>
+      <span id="countdown-hour" class="countdown-digit"></span><span class="txt">時間</span>
+      <span id="countdown-min" class="countdown-digit"></span><span class="txt">分</span>
+      <span id="countdown-sec" class="countdown-digit"></span><span class="txt">.</span>
+      <span id="countdown-millisec" class="countdown-digit millisecond"></span><span class="txt"> 秒</span>
+    </div>
+    <div id="countdownArea" class="countdown02 sp view_timer" data-start-date="2025/7/16 00:00:00">
+      <span class="countdown-tx deadline">締め切りまであと</span>
+      <span id="countdown02-day" class="countdown-digit"></span><span class="txt">日</span>
+      <span id="countdown02-hour" class="countdown-digit"></span><span class="txt">時間</span>
+      <span id="countdown02-min" class="countdown-digit"></span><span class="txt">分</span>
+      <span id="countdown02-sec" class="countdown-digit"></span><span class="txt">.</span>
+      <span id="countdown02-millisec" class="countdown-digit millisecond"></span><span class="txt"> 秒</span>
+    </div>
   </div>
-
   <main id="family">
     <div class="header_sp sp">
       <h1 id="logo">
@@ -35,7 +55,6 @@
                 <li class="nav-item nav-items__item"><a href="#flow">ご応募の流れ</a></li>
                 <li class="nav-item nav-items__item"><a href="#qa">Q&A</a></li>
                 <li class="nav-item nav-items__item"><a href="#voice">Voice</a></li>
-                <!-- <li class="nav-item nav-items__item"><a href="#application">応募資格</a></li> -->
                 <li class="nav-item nav-items__item">
                   <p class="p-target_fukidashi nav_fukidashi">たった<span>1分</span>で応募完了</p>
                   <a href="#contact" class="p-target">
@@ -54,7 +73,6 @@
         </nav>
         </div>
     </div>
-
     <div class="p-mainview l-mainview">
         <div class="p-mainview_box">
             <picture class="p-mainview__img">
@@ -91,6 +109,7 @@
             <div class="p-special__ribon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/special-ribon.png" alt="<?php bloginfo('title'); ?>">
             </div>
+            <div class="p-special__text">最大70万円相当<span>が</span>無料<span>になります。</span></div>
             <div class="p-special__items">
                 <div class="p-special__item p-special-card">
                     <div class="p-special-card__ribon">
@@ -237,7 +256,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/special-card-img16.png" alt="+お子様衣装1点 お子様用ランチ 1名様分をサービス">
             </div>
             <p class="p-special__foot">
-                ※30名以上の披露宴またはパーティーをされる方に限ります。　※披露宴、または、パーティー費用は含まれておりません。
+                ※30名以上の披露宴またはパーティーをされる方に限ります。　<br class="sp">※披露宴、または、パーティー費用は含まれておりません。
             </p>
             <div class="btn_1minute_02">
               <div class="shiny-btn">
@@ -251,10 +270,10 @@
             </div>
           </div>
         </section>
-                <section id="wedding_hall" class="p-wedding l-wedding">
+        <section id="wedding_hall" class="p-wedding l-wedding">
           <div class="p-wedding__inner l-inner">
             <h2 class="p-wedding__title">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/wedding-hall-title.png" alt="Wedding Hall">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/wedding-hall-title.png" alt="Wedding Hall">
             </h2>
             <p class="p-wedding__copy">ご希望の式場をお選びいただけます</p>
             <div class="p-wedding__items">
@@ -493,7 +512,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal06">
                         <a class="p-wedding-card__ribon">
@@ -1036,6 +1054,34 @@
             </ul>
         </div>
     </section>
+    <section class="p-application l-application">
+      <div class="p-application__inner l-inner">
+        <h2 class="p-application__title">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/applicationdetails-title.png" alt="Application Details">
+        </h2>
+        <div class="p-application__copy">応募資格</div>
+        <div class="p-application__items">
+          <div class="p-application__item p-application-card">
+            <div class="p-application-card__body">
+              <h3 class="p-application-card__title">プレゼント内容</h3>
+              <p class="p-application-card__toptext">
+                抽選で各式場にて5組様に結婚式をプレゼント！
+              </p>
+            </div>
+          </div>
+          <div class="p-application__item p-application-card">
+            <div class="p-application-card__body">
+              <h3 class="p-application-card__title">応募資格</h3>
+              <ol class="p-application-card__box">
+                <li class="p-application-card__text">1.30名様以上の披露宴･パーティーをされる方</li>
+                <li class="p-application-card__text">2.プレゼントさせて頂く「結婚式」に関してお打合せ時から当日のシーンの撮影等にご協力いただける方</li>
+                <li class="p-application-card__text">3.2にて撮影したお写真等をHPやFacebook等の販促物で使用させていただくことをご了承いただける方</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="p-contact l-contact" id="contact">
       <div class="p-contact__inner l-inner">
         <h2 class="p-contact__title">
@@ -1055,5 +1101,6 @@
             $.fatNav();
         }());
     </script>
+    <script async src="//www.instagram.com/embed.js"></script>
   </main>
 <?php get_footer("family"); ?>
