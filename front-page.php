@@ -43,7 +43,7 @@ get_header(); ?>
       <p class="box">本日、<span id="numberDisplay"></span>人のネット応募が入りました</p>
     </div>
   </div>
-  <div id="countdownArea" class="countdown sp view_timer" data-end-date="2025/7/15 23:59:59">
+  <div id="countdownArea" class="countdown sp view_timer" data-end-date="2025/7/31 23:59:59">
     <span class="countdown-tx deadline">締め切りまであと</span>
     <span id="countdown-day" class="countdown-digit"></span><span class="txt">日</span>
     <span id="countdown-hour" class="countdown-digit"></span><span class="txt">時間</span>
@@ -51,7 +51,7 @@ get_header(); ?>
     <span id="countdown-sec" class="countdown-digit"></span><span class="txt">.</span>
     <span id="countdown-millisec" class="countdown-digit millisecond"></span><span class="txt"> 秒</span>
   </div>
-  <div id="countdownArea" class="countdown02 sp view_timer" data-start-date="2025/7/16 00:00:00">
+  <div id="countdownArea" class="countdown02 sp view_timer" data-start-date="2025/8/1 00:00:00">
     <span class="countdown-tx deadline">締め切りまであと</span>
     <span id="countdown02-day" class="countdown-digit"></span><span class="txt">日</span>
     <span id="countdown02-hour" class="countdown-digit"></span><span class="txt">時間</span>
@@ -62,35 +62,34 @@ get_header(); ?>
 </div>
 <main>
 <div class="header_sp sp">
-    <h1 id="logo">
-    <img src="https://www.otokucon.jp/wp-content/themes/otokucon/assets/images/logo.png"></h1>
-    <div class="fat-nav sp">
+    <h1 id="logo"><img src="https://www.otokucon.jp/wp-content/themes/otokucon/assets/images/logo.png"></h1>
+      <div class="fat-nav sp">
         <nav class="header-nav fat-nav__wrapper" id="js-nav">
-            <ul class="nav__items nav-items nav-list" id="menu">
-                <li class="nav-items__item"><a href="#special_favor">10大無料特典！</a></li>
-                <li class="nav-item nav-items__item"><a href="#wedding_hall">会場を選ぶ</a></li>
-                <li class="nav-item nav-items__item"><a href="#case_stady">こんな方におすすめです</a></li>
-                <li class="nav-item nav-items__item"><a href="#flow">ご応募の流れ</a></li>
-                <li class="nav-item nav-items__item"><a href="#qa">Q&A</a></li>
-                <li class="nav-item nav-items__item" style="letter-spacing: -2px;"><a href="#from_instagram">わたしたちも挙式をあげました</a></li>
-                <li class="nav-item nav-items__item"><a href="#voice">ウェディングレポート</a></li>
-                <li class="nav-item nav-items__item"><a href="#application">応募資格</a></li>
-                <li class="nav-item nav-items__item">
-                  <p class="p-target_fukidashi nav_fukidashi">たった<span>1分</span>で応募完了</p>
-                  <a href="#contact" class="p-target">
-                    <div class="p-target__inner">
-                      <p class="p-target__head">
-                        <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/present-icon.png" alt="キャンペーンに応募する"></span> キャンペーンに<br class="u-desktop">応募する
-                      </p>
-                      <p class="p-target__foot">期間限定<br class="u-desktop"><span>：</span>
-                        <?php get_template_part('template/target_sp'); ?>
-                      </p>
-                    </div>
-                  </a>
-                </li>
-            </ul>
+          <ul class="nav__items nav-items nav-list" id="menu">
+            <li class="nav-items__item"><a href="#special_favor">10大無料特典！</a></li>
+            <li class="nav-item nav-items__item"><a href="#wedding_hall">会場を選ぶ</a></li>
+            <li class="nav-item nav-items__item"><a href="#case_stady">こんな方におすすめです</a></li>
+            <li class="nav-item nav-items__item"><a href="#flow">ご応募の流れ</a></li>
+            <li class="nav-item nav-items__item"><a href="#qa">Q&A</a></li>
+            <li class="nav-item nav-items__item" style="letter-spacing: -2px;"><a href="#from_instagram">わたしたちも挙式をあげました</a></li>
+            <li class="nav-item nav-items__item"><a href="#voice">ウェディングレポート</a></li>
+            <li class="nav-item nav-items__item"><a href="#application">応募資格</a></li>
+            <li class="nav-item nav-items__item">
+              <p class="p-target_fukidashi nav_fukidashi">たった<span>1分</span>で応募完了</p>
+              <a href="#contact" class="p-target">
+                <div class="p-target__inner">
+                  <p class="p-target__head">
+                    <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/present-icon.png" alt="キャンペーンに応募する"></span> キャンペーンに<br class="u-desktop">応募する
+                  </p>
+                  <p class="p-target__foot">期間限定<br class="u-desktop"><span>：</span>
+                    <?php get_template_part('template/target_sp'); ?>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </div>
 
     <div class="p-mainview l-mainview">
