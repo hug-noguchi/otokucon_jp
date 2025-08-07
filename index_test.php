@@ -72,7 +72,7 @@ get_header(); ?>
       <p class="box">本日、<span id="numberDisplay"></span>人のネット応募が入りました</p>
     </div>
   </div>
-  <div id="countdownArea" class="countdown sp view_timer" data-end-date="2024/11/15 23:59:59">
+  <div id="countdownArea" class="countdown sp view_timer" data-end-date="2025/07/31 23:59:59">
     <span class="countdown-tx deadline">締め切りまであと</span>
     <span id="countdown-day" class="countdown-digit"></span><span class="txt">日</span>
     <span id="countdown-hour" class="countdown-digit"></span><span class="txt">時間</span>
@@ -80,7 +80,7 @@ get_header(); ?>
     <span id="countdown-sec" class="countdown-digit"></span><span class="txt">.</span>
     <span id="countdown-millisec" class="countdown-digit millisecond"></span><span class="txt"> 秒</span>
   </div>
-  <div id="countdownArea" class="countdown02 sp view_timer" data-start-date="2024/11/16 00:00:00">
+  <div id="countdownArea" class="countdown02 sp view_timer" data-start-date="2025/08/01 00:00:00">
     <span class="countdown-tx deadline">締め切りまであと</span>
     <span id="countdown02-day" class="countdown-digit"></span><span class="txt">日</span>
     <span id="countdown02-hour" class="countdown-digit"></span><span class="txt">時間</span>
@@ -367,6 +367,56 @@ get_header(); ?>
                                     </div>
                                     <div class="p-wedding-card__other">
                                         <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-wedding__item p-wedding-card">
+                    <div class="js_modalBtnCont" data-modal-btn="modal11">
+                        <a class="p-wedding-card__ribon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie01.jpg" alt="アールベルアンジェ三重<">
+                        </a>
+                        <p class="area">三重県津市</p>
+                        <div class="p-wedding-card__body">
+                            <h3 class="p-wedding-card__title">アールベルアンジェ三重</h3>
+                            <div class="p-wedding-card__btn">詳しくはこちら</div>
+                        </div>
+                    </div>
+                    <!-- モーダル（ポップアップ）の内容 -->
+                    <div class="p-wedding-card__popUp js_modalWrap" data-modal-cont="modal11">
+                        <div class="p-wedding-card__bg js_modalBG"></div>
+                        <div class="p-wedding-card__cotainer">
+                            <span class="p-wedding-card__closebtn js_modalContInner"></span>
+                            <div class="p-wedding-card__content">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie01.jpg" alt="アールベルアンジェ三重">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie02.jpg" alt="アールベルアンジェ三重">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie03.jpg" alt="アールベルアンジェ三重">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next swiper-slide"><span></span></div>
+                                    <div class="swiper-button-prev swiper-slide"><span></span></div>
+                                </div>
+                                <div class="p-wedding-card__block">
+                                    <div class="p-wedding-card__modalbody">
+                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ三重</h3>
+                                        <p class="p-wedding-card__modaltext">
+                                            たくさんの緑に囲まれた真っ白な大邸宅は、<br>
+                                            自由な発想でこだわりのウェディングを叶えたいおふたりのためのステージ。<br>
+                                            世界に一つだけのウェディングが誕生します。
+                                        </p>
+                                    </div>
+                                    <div class="p-wedding-card__other">
+                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net11" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
