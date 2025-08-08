@@ -1,23 +1,37 @@
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
+  // ←ここに対応表＋応募ボタン用ハンドラを入れる（★このブロックを追加）
+  const NET_TO_PARE = {
+    "js-net01": "js-pare01",
+    "js-net02": "js-pare03",
+    "js-net03": "js-pare04",
+    "js-net04": "js-pare05",
+    "js-net05": "js-pare06",
+    "js-net06": "js-pare07",
+    "js-net07": "js-pare08",
+    "js-net08": "js-pare09",
+    "js-net09": "js-pare10",
+    "js-net10": "js-pare02",
+    "js-net11": "js-pare11",
+  };
 
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+  $(document).on("click", 'a.p-wedding-card__modalForm, a[class*="js-net"]', function () {
+    const cls = Array.from(this.classList).find((c) => NET_TO_PARE[c]);
+    if (!cls) return;
+    const value = NET_TO_PARE[cls];
+    const $scope = $("#contact").closest("section");
+    const $group = $scope.find('input.p-contact-radio__item[name="radio-name"]');
+    const $target = $group.filter('[value="' + value + '"]');
+    $group.prop("checked", false);
+    $target.prop("checked", true).trigger("change");
+    console.log("[radio]", { clicked: cls, set: value, found: $target.length, checked: $target.prop("checked") });
+  });
+
+  // ↓スムーススクロールは残す（ラジオを触る処理は削除済み）
   $(document).on("click", 'a[href*="#"]', function () {
-    let click_item = $(this).attr("id");
-    let radio = $("input[type=radio]");
-    radio.each((index, element) => {
-      let contact_item = element.value;
-      if (contact_item == click_item) {
-        element.checked = true;
-      }
-    });
-    console.log(radio);
-    let time = 1000;
-    let header = $("header").innerHeight();
-    let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $("html,body").delay(300).animate({ scrollTop: targetY }, time, "linear");
+    const $t = $(this.hash);
+    if (!$t.length) return;
+    const y = $t.offset().top - $("header").innerHeight();
+    $("html,body").delay(300).animate({ scrollTop: y }, 1000, "linear");
     return false;
   });
 
