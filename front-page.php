@@ -344,6 +344,56 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="p-wedding__item p-wedding-card">
+                    <div class="js_modalBtnCont" data-modal-btn="modal11">
+                        <a class="p-wedding-card__ribon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie01.jpg" alt="アールベルアンジェ三重<">
+                        </a>
+                        <p class="area">三重県津市</p>
+                        <div class="p-wedding-card__body">
+                            <h3 class="p-wedding-card__title">アールベルアンジェ三重</h3>
+                            <div class="p-wedding-card__btn">詳しくはこちら</div>
+                        </div>
+                    </div>
+                    <!-- モーダル（ポップアップ）の内容 -->
+                    <div class="p-wedding-card__popUp js_modalWrap" data-modal-cont="modal11">
+                        <div class="p-wedding-card__bg js_modalBG"></div>
+                        <div class="p-wedding-card__cotainer">
+                            <span class="p-wedding-card__closebtn js_modalContInner"></span>
+                            <div class="p-wedding-card__content">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie01.jpg" alt="アールベルアンジェ三重">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie02.jpg" alt="アールベルアンジェ三重">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mie03.jpg" alt="アールベルアンジェ三重">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next swiper-slide"><span></span></div>
+                                    <div class="swiper-button-prev swiper-slide"><span></span></div>
+                                </div>
+                                <div class="p-wedding-card__block">
+                                    <div class="p-wedding-card__modalbody">
+                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ三重</h3>
+                                        <p class="p-wedding-card__modaltext">
+                                            たくさんの緑に囲まれた真っ白な大邸宅は、<br>
+                                            自由な発想でこだわりのウェディングを叶えたいおふたりのためのステージ。<br>
+                                            世界に一つだけのウェディングが誕生します。
+                                        </p>
+                                    </div>
+                                    <div class="p-wedding-card__other">
+                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net11" href="#contact">この式場に応募する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal03">
                         <a class="p-wedding-card__ribon">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img03.jpg" alt="ベルクラシック神戸">
@@ -1152,14 +1202,16 @@ get_header(); ?>
         </div>
     </section>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.fatNav.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         (function() {
             $.fatNav();
         }());
     </script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js?ver=1.0.13"></script>
     <script async src="//www.instagram.com/embed.js"></script>
 </main>
 <?php get_footer(); ?>
