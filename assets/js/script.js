@@ -1,29 +1,31 @@
 jQuery(function ($) {
-  // ←ここに対応表＋応募ボタン用ハンドラを入れる（★このブロックを追加）
-  const NET_TO_PARE = {
-    "js-net01": "js-pare01",
-    "js-net02": "js-pare03",
-    "js-net03": "js-pare04",
-    "js-net04": "js-pare05",
-    "js-net05": "js-pare06",
-    "js-net06": "js-pare07",
-    "js-net07": "js-pare08",
-    "js-net08": "js-pare09",
-    "js-net09": "js-pare10",
-    "js-net10": "js-pare02",
-    "js-net11": "js-pare11",
-  };
-
+  // クリック時の共通ハンドラ
   $(document).on("click", 'a.p-wedding-card__modalForm, a[class*="js-net"]', function () {
-    const cls = Array.from(this.classList).find((c) => NET_TO_PARE[c]);
+    const cls = Array.from(this.classList).find((c) => /^js-net\d+$/.test(c));
     if (!cls) return;
-    const value = NET_TO_PARE[cls];
+
+    // ① 自動変換（js-netNN → js-pareNN）
+    let value = cls.replace("js-net", "js-pare");
+
     const $scope = $("#contact").closest("section");
     const $group = $scope.find('input.p-contact-radio__item[name="radio-name"]');
-    const $target = $group.filter('[value="' + value + '"]');
+
+    // 対応するラジオを探す
+    let $target = $group.filter(`[value="${value}"]`);
+
+    // ② なければ、ページ側が用意した上書きマップを使う（任意）
+    if ($target.length === 0 && window.OTOKUCON_MAP?.NET_TO_PARE?.[cls]) {
+      value = window.OTOKUCON_MAP.NET_TO_PARE[cls];
+      $target = $group.filter(`[value="${value}"]`);
+    }
+
+    if ($target.length === 0) {
+      console.warn("対応するラジオが見つかりません:", { clicked: cls, tried: value });
+      return;
+    }
+
     $group.prop("checked", false);
     $target.prop("checked", true).trigger("change");
-    console.log("[radio]", { clicked: cls, set: value, found: $target.length, checked: $target.prop("checked") });
   });
 
   // ↓スムーススクロールは残す（ラジオを触る処理は削除済み）
@@ -170,7 +172,7 @@ jQuery(function ($) {
 // カウントダウンタイマー
 let countdown = setInterval(function () {
   const now = new Date(); //今の日時
-  const target = new Date("2025/7/31 23:59:59"); //ターゲット日時を取得
+  const target = new Date("2025/8/15 23:59:59"); //ターゲット日時を取得
   let remainTime = target - now; //差分を取る（ミリ秒で返ってくる）
 
   //指定の日時を過ぎていたら処理をしない
@@ -200,7 +202,7 @@ let countdown = setInterval(function () {
 // カウントダウンタイマー
 let countdown02 = setInterval(function () {
   const now = new Date(); // 今の日時
-  const target = new Date("2025/8/15 23:59:59"); // ターゲット日時を取得
+  const target = new Date("2025/8/31 23:59:59"); // ターゲット日時を取得
   let remainTime = target - now; // 差分を取る（ミリ秒で返ってくる）
 
   // 指定の日時を過ぎていたら処理をしない
