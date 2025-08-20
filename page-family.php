@@ -109,7 +109,7 @@
             <div class="p-special__ribon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/special-ribon.png" alt="<?php bloginfo('title'); ?>">
             </div>
-            <div class="p-special__text">最大70万円相当<span>が</span>無料<span>になります。</span></div>
+            <div class="p-special__text">最大50万円相当<span>が</span>無料<span>になります。</span></div>
             <div class="p-special__items">
                 <div class="p-special__item p-special-card">
                     <div class="p-special-card__ribon">
