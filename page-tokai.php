@@ -11,11 +11,14 @@
 .number_apply.hidden {
   display: none;
 }
+/* .p-target {
+  background: url(https://www.otokucon.jp/wp-content/themes/otokucon/assets/images/present-bg-tokai.png);
+} */
 </style>
 
 <div class="countdown-box sp">
   <?php?>
-  <?php get_template_part('template/target'); ?>
+  <?php get_template_part('template/target_tokai'); ?>
   <div class="number_apply add-control">
     <div class="action-close">
       <input type="checkbox" class="checkbox" id="close" name="close" /><label for="close" class="btn">×</label>
@@ -50,7 +53,6 @@
             <li class="nav-item nav-items__item"><a href="#case_stady">こんな方におすすめです</a></li>
             <li class="nav-item nav-items__item"><a href="#flow">ご応募の流れ</a></li>
             <li class="nav-item nav-items__item"><a href="#qa">Q&A</a></li>
-            <li class="nav-item nav-items__item" style="letter-spacing: -2px;"><a href="#from_instagram">わたしたちも挙式をあげました</a></li>
             <li class="nav-item nav-items__item"><a href="#voice">ウェディングレポート</a></li>
             <li class="nav-item nav-items__item"><a href="#application">応募資格</a></li>
             <li class="nav-item nav-items__item">
@@ -74,22 +76,22 @@
     <div class="p-mainview l-mainview">
         <div class="p-mainview_box">
             <picture class="p-mainview__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/mainview3_pc.png" media="(min-width: 768px)" />
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainview3_sp.png" alt="抽選で5組様に！">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/mainview_tokai_pc.png" media="(min-width: 768px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainview_tokai_sp.png" alt="抽選で5組様に！">
             </picture>
-            <p class="chanpaign_date_box">
+            <!-- <p class="chanpaign_date_box">
                 <span class="date">
                 <?php get_template_part('template/chanpaign_date'); ?>
                 </span>
                 <span>まで</span>
-            </p>
+            </p> -->
         </div>
         <div class="p-mainview__btn__box btn_1minute">
           <div class="shiny-btn">
             <a href="#contact">
               <picture class="p-mainview__btn btn_campaign">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_pc.png" media="(min-width: 768px)" />
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_sp.png" alt="たった1分で完了！キャンペーンに応募する">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_tokai_pc.png" media="(min-width: 768px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_tokai_sp.png" alt="たった1分で完了！キャンペーンに応募する">
               </picture>
             </a>
           </div>
@@ -211,8 +213,8 @@
               <div class="shiny-btn">
                 <a href="#contact">
                   <picture class="p-mainview__btn btn_campaign">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_pc.png" media="(min-width: 768px)" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_sp.png" alt="たった1分で完了！キャンペーンに応募する">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_tokai_pc.png" media="(min-width: 768px)" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_tokai_sp.png" alt="たった1分で完了！キャンペーンに応募する">
                   </picture>
                 </a>
               </div>
@@ -589,8 +591,8 @@
               <div class="shiny-btn">
                 <a href="#contact">
                   <picture class="p-mainview__btn btn_campaign">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_pc.png" media="(min-width: 768px)" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_sp.png" alt="たった1分で完了！キャンペーンに応募する">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_tokai_pc.png" media="(min-width: 768px)" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn_campaign_tokai_sp.png" alt="たった1分で完了！キャンペーンに応募する">
                   </picture>
                 </a>
               </div>
@@ -641,30 +643,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="from_instagram">
-      <div class="from_instagram_inner l-inner">
-        <p class="from_instagram__sublead">
-          <span>わたしたちも<br class="sp">挙式をあげました</span>
-        </p>
-        <h2 class="from_instagram__title">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/from_instagram_title.png" alt="from instagram">
-        </h2>
-        <ul class="from_instagram_list">
-          <?php
-          $insta_embeds = [
-            '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C2Oz-VRyAEb/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>',
-            '<li><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C8Efk9DyqlQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote></li>',
-          ];
-          // 配列をランダムにシャッフル
-          shuffle($insta_embeds);
-          // 最初の3つを表示
-          for ($i = 0; $i < 3; $i++) {
-            echo $insta_embeds[$i];
-          }
-          ?>
-        </ul>
-      </div>
     </section>
     <section id="voice" class="p-voice l-voice">
         <div class="p-voice__inner l-inner">
