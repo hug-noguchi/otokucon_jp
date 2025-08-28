@@ -3951,4 +3951,62 @@ a:hover {
   }
 }
 
+/* 東海LP */
+.tokai .campaign_date_tokai p {
+  font-family: "游明朝体";
+  font-size: 26px;
+  color: #4d4d4d;
+  position: absolute;
+  top: 65.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+.tokai .campaign_date_tokai .date {
+  font-size: 50px;
+  padding-left: 20px;
+}
+.tokai .campaign_date_tokai .date_slash {
+  font-family: inherit;
+}
+.tokai .campaign_date_tokai .day_circle {
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 3px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 21px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.tokai .campaign_date_tokai .until {
+  font-family: "游明朝体+36ポかな";
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  .tokai .campaign_date_tokai p {
+    font-size: 12px;
+    top: 63.5%;
+    width: 100%;
+    justify-content: center;
+  }
+  .tokai .campaign_date_tokai .date {
+    font-size: 27px;
+    padding-left: 10px;
+  }
+  .tokai .campaign_date_tokai .day_circle {
+    font-size: 9px;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    line-height: 14px;
+  }
+  .tokai .campaign_date_tokai .until {
+    font-size: 10px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

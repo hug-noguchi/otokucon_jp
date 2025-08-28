@@ -42,7 +42,7 @@
     <span id="countdown02-millisec" class="countdown-digit millisecond"></span><span class="txt"> 秒</span>
   </div>
 </div>
-<main>
+<main class="tokai">
 <div class="header_sp sp">
     <h1 id="logo"><img src="https://www.otokucon.jp/wp-content/themes/otokucon/assets/images/logo.png"></h1>
       <div class="fat-nav sp">
@@ -79,12 +79,13 @@
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/mainview_tokai_pc.png" media="(min-width: 768px)" />
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mainview_tokai_sp.png" alt="抽選で5組様に！">
             </picture>
-            <!-- <p class="chanpaign_date_box">
-                <span class="date">
-                <?php get_template_part('template/chanpaign_date'); ?>
-                </span>
-                <span>まで</span>
-            </p> -->
+            <div class="campaign_date_tokai">
+              <p>
+                キャンペーン期間
+                <?php get_template_part('template/chanpaign_date_tokai'); ?>
+                <span class="until">まで</span>
+              </p>
+            </div>
         </div>
         <div class="p-mainview__btn__box btn_1minute">
           <div class="shiny-btn">
