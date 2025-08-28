@@ -312,12 +312,31 @@ function my_mail( $mail_raw, $values, $data ) {
 	return $mail_raw;
 }
 
+//東海LP用メールアドレス振り分け　
+function autoback_my_mail_tokai($Mail_raw, $values, $Data)
+{
+	if ($Data->get('radio-name') == 'ガーデンテラス東山') {
+		$Mail_raw->to = 'miura@bellco.co.jp,kaneda@bellclassic.co.jp,hirotaka-sakuragi@bellclassic.co.jp,garden-terrace@gt-higashiyama.jp';
+		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,morito@hershe.co.jp,ebisawa@hershe.co.jp';
+	} else if ($Data->get('radio-name') == 'アールベルアンジェ四日市') {
+		$Mail_raw->to = 'miura@bellco.co.jp,kaneda@bellclassic.co.jp,ueda@bellclassic.co.jp,yokkaichi@bellclassic.co.jp';
+		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,morito@hershe.co.jp,ebisawa@hershe.co.jp';
+	} else if ($Data->get('radio-name') == 'アールベルアンジェ三重') {
+		$Mail_raw->to = 'miura@bellco.co.jp,kaneda@bellclassic.co.jp,sugaya@bellclassic.co.jp,mie@bellclassic.co.jp';
+		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,morito@hershe.co.jp,ebisawa@hershe.co.jp';
+	}
+	return $Mail_raw;
+}
+add_filter('mwform_admin_mail_mw-wp-form-1513', 'autoback_my_mail_tokai', 10, 3);
+
 add_filter( 'mwform_auto_mail_raw_mw-wp-form-7', 'my_mail', 10, 3 );
 add_filter( 'mwform_admin_mail_raw_mw-wp-form-7', 'my_mail', 10, 3 );
 add_filter( 'mwform_auto_mail_raw_mw-wp-form-387', 'my_mail', 10, 3 );
 add_filter( 'mwform_admin_mail_raw_mw-wp-form-387', 'my_mail', 10, 3 );
 add_filter( 'mwform_auto_mail_raw_mw-wp-form-944', 'my_mail', 10, 3 );
 add_filter( 'mwform_admin_mail_raw_mw-wp-form-944', 'my_mail', 10, 3 );
+add_filter( 'mwform_auto_mail_raw_mw-wp-form-1513', 'my_mail', 10, 3 );
+add_filter( 'mwform_admin_mail_raw_mw-wp-form-1513', 'my_mail', 10, 3 );
 
 //WordPressのコードエディタでspanタグを消さない設定
 function my_tiny_mce_before_init( $init_array ) {
