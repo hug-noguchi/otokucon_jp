@@ -240,6 +240,9 @@ function add_mwform_validation_rule($Validation, $data) {
 	} else if ($Data->get('radio-name') == 'ベルクラシック大阪') {
 		$Mail_raw->to = 'miura@bellco.co.jp,osaka@bellclassic.co.jp,tanioka@bellclassic.co.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,morito@hershe.co.jp,ebisawa@hershe.co.jp';
+	} else if ($Data->get('radio-name') == 'アールベルアンジェ高松') {
+		$Mail_raw->to = 'kaneda@bellclassic.co.jp,takamatsu@bellclassic.co.jp';
+		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,morito@hershe.co.jp,ebisawa@hershe.co.jp';
 	}
 	return $Mail_raw;
 }
