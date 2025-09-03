@@ -121,7 +121,7 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="p-mainview l-mainview aaa">
+    <div class="p-mainview l-mainview">
         <div class="p-mainview_box">
             <picture class="p-mainview__img">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/mainview3_pc.png" media="(min-width: 768px)" />
@@ -157,8 +157,6 @@ get_header(); ?>
             <div class="p-special__ribon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/special-ribon.png" alt="<?php bloginfo('title'); ?>">
             </div>
-            <div class="p-special__text">最大70万円相当<span>が</span>無料<span>になります。</span></div>
-
             <div class="p-special__items">
                 <div class="p-special__item p-special-card">
                     <div class="p-special-card__ribon">
@@ -318,7 +316,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a  id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net01" href="#contact">この式場に応募する</a>
+                                        <a  id="js-pare01" class="p-wedding-card__modalForm js-pagelink js-net01" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +364,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare03" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -464,7 +462,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare01" class="p-wedding-card__modalForm js-pagelink js-net04" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare04" class="p-wedding-card__modalForm js-pagelink js-net04" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -512,7 +510,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net05" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare05" class="p-wedding-card__modalForm js-pagelink js-net05" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -560,7 +558,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net06" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare06" class="p-wedding-card__modalForm js-pagelink js-net06" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -609,7 +607,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net07" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare07" class="p-wedding-card__modalForm js-pagelink js-net07" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -657,7 +655,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net08" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare08" class="p-wedding-card__modalForm js-pagelink js-net08" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -701,12 +699,12 @@ get_header(); ?>
                                     <div class="p-wedding-card__modalbody">
                                         <h3 class="p-wedding-card__modaltitle">ベルクラシック空港</h3>
                                         <p class="p-wedding-card__modaltext">
-                                        2023年5月ル・リアン（le lien）グランドオープン。<br>
-                                        ワンフロア貸し切りでアットホームにも盛大にも、個性豊かな会場でお二人らしいウェディングが叶います。
+                                            2023年5月ル・リアン（le lien）グランドオープン。<br>
+                                            ワンフロア貸し切りでアットホームにも盛大にも、個性豊かな会場でお二人らしいウェディングが叶います。
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net09" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare09" class="p-wedding-card__modalForm js-pagelink js-net09" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -754,7 +752,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net10" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare10" class="p-wedding-card__modalForm js-pagelink js-net10" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -802,7 +800,56 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net11" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare02" class="p-wedding-card__modalForm js-pagelink js-net11" href="#contact">この式場に応募する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-wedding__item p-wedding-card">
+                    <div class="js_modalBtnCont" data-modal-btn="modal12">
+                        <a class="p-wedding-card__ribon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu01.jpg" alt="アールベルアンジェ高松">
+                        </a>
+                        <p class="area">香川県高松市</p>
+                        <div class="p-wedding-card__body">
+                            <h3 class="p-wedding-card__title">アールベルアンジェ高松</h3>
+                            <div class="p-wedding-card__btn">詳しくはこちら</div>
+                        </div>
+                    </div>
+                    <!-- モーダル（ポップアップ）の内容 -->
+                    <div class="p-wedding-card__popUp js_modalWrap" data-modal-cont="modal12">
+                        <div class="p-wedding-card__bg js_modalBG"></div>
+                        <div class="p-wedding-card__cotainer">
+                            <span class="p-wedding-card__closebtn js_modalContInner"></span>
+                            <div class="p-wedding-card__content">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu01.jpg" alt="アールベルアンジェ高松">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu02.jpg" alt="アールベルアンジェ高松">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu03.jpg" alt="アールベルアンジェ高松">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next swiper-slide"><span></span></div>
+                                    <div class="swiper-button-prev swiper-slide"><span></span></div>
+                                </div>
+                                <div class="p-wedding-card__block">
+                                    <div class="p-wedding-card__modalbody">
+                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ高松</h3>
+                                        <p class="p-wedding-card__modaltext">
+                                          高級リゾートさながらのガーデンとその向こうに見える瀬戸内の海と島々。<br>
+                                          圧倒的なロケーションと贅沢な非日常空間で心に残る特別な一日を。
+                                        </p>
+                                    </div>
+                                    <div class="p-wedding-card__other">
+                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net12" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -916,7 +963,7 @@ get_header(); ?>
             <div class="p-qa__copy">よくある質問</div>
             <div class="p-qa__items">
                 <div class="p-qa__item p-qa-media">
-                    <div class="p-qa-media__inner js-tab-trigger" data-id="tab01">
+                    <div class="p-qa-media__inner js-tab-trigger q01" data-id="tab01">
                         <div class="p-qa-media__head">
                             <div class="p-qa-media__q">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/q-media-q.jpg" alt="Q">
@@ -926,7 +973,7 @@ get_header(); ?>
                             </div>
                             <span class="p-qa-media__btn"></span>
                         </div>
-                        <div class="p-qa-media__foot js-tab-target" id="tab01">
+                        <div class="p-qa-media__foot js-tab-target" id="tab01" style="display: block;">
                             <div class="p-qa-media__block">
                                 <div class="p-qa-media__a">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/q-media-a.jpg" alt="A">
@@ -947,7 +994,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="p-qa__item p-qa-media">
-                    <div class="p-qa-media__inner  js-tab-trigger" data-id="tab02">
+                    <div class="p-qa-media__inner js-tab-trigger" data-id="tab02">
                         <div class="p-qa-media__head">
                             <div class="p-qa-media__q">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/q-media-q.jpg" alt="Q">
@@ -1220,7 +1267,7 @@ get_header(); ?>
 						</ul>
         </div>
     </section>
-    <section id="application" class="p-application l-application">
+    <!-- <section id="application" class="p-application l-application">
         <div class="p-application__inner l-inner">
             <h2 class="p-application__title">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/application-details-title.png" alt="Application Details">
@@ -1247,7 +1294,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="p-contact l-contact" id="contact">
         <div class="p-contact__inner l-inner">
             <h2 class="p-contact__title">
