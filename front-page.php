@@ -779,6 +779,55 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
+                <div class="p-wedding__item p-wedding-card">
+                    <div class="js_modalBtnCont" data-modal-btn="modal12">
+                        <a class="p-wedding-card__ribon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu01.jpg" alt="アールベルアンジェ高松">
+                        </a>
+                        <p class="area">香川県高松市</p>
+                        <div class="p-wedding-card__body">
+                            <h3 class="p-wedding-card__title">アールベルアンジェ高松</h3>
+                            <div class="p-wedding-card__btn">詳しくはこちら</div>
+                        </div>
+                    </div>
+                    <!-- モーダル（ポップアップ）の内容 -->
+                    <div class="p-wedding-card__popUp js_modalWrap" data-modal-cont="modal12">
+                        <div class="p-wedding-card__bg js_modalBG"></div>
+                        <div class="p-wedding-card__cotainer">
+                            <span class="p-wedding-card__closebtn js_modalContInner"></span>
+                            <div class="p-wedding-card__content">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu01.jpg" alt="アールベルアンジェ高松">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu02.jpg" alt="アールベルアンジェ高松">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/takamatsu03.jpg" alt="アールベルアンジェ高松">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next swiper-slide"><span></span></div>
+                                    <div class="swiper-button-prev swiper-slide"><span></span></div>
+                                </div>
+                                <div class="p-wedding-card__block">
+                                    <div class="p-wedding-card__modalbody">
+                                        <h3 class="p-wedding-card__modaltitle">アールベルアンジェ高松</h3>
+                                        <p class="p-wedding-card__modaltext">
+                                          高級リゾートさながらのガーデンとその向こうに見える瀬戸内の海と島々。<br>
+                                          圧倒的なロケーションと贅沢な非日常空間で心に残る特別な一日を。
+                                        </p>
+                                    </div>
+                                    <div class="p-wedding-card__other">
+                                        <a id="js-pare12" class="p-wedding-card__modalForm js-pagelink js-net12" href="#contact">この式場に応募する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
