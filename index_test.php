@@ -849,7 +849,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net12" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare12" class="p-wedding-card__modalForm js-pagelink js-net12" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
