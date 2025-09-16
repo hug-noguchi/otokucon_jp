@@ -336,7 +336,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-pare03" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare02" class="p-wedding-card__modalForm js-pagelink js-net02" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -386,7 +386,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-radio-pare" class="p-wedding-card__modalForm js-pagelink js-net03" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare03" class="p-wedding-card__modalForm js-pagelink js-net03" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
@@ -772,7 +772,7 @@ get_header(); ?>
                                         </p>
                                     </div>
                                     <div class="p-wedding-card__other">
-                                        <a id="js-pare02" class="p-wedding-card__modalForm js-pagelink js-net11" href="#contact">この式場に応募する</a>
+                                        <a id="js-pare11" class="p-wedding-card__modalForm js-pagelink js-net11" href="#contact">この式場に応募する</a>
                                     </div>
                                 </div>
                             </div>
