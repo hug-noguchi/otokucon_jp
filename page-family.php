@@ -3,6 +3,12 @@
     .mw_wp_form .horizontal-item {
       margin-left: 0 !important;
     }
+    .btn_1minute {
+      bottom: 23.5%;
+    }
+    .p-special__text {
+      margin-top: 2.125rem;
+    }
     @media screen and (max-width: 767px) {
       #lp-box {
         height: 88px;
@@ -12,6 +18,11 @@
       }
       .p-footer {
         padding: 0px 0 5.5125rem 0;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .p-mainview__btn__box {
+        bottom: 28%;
       }
     }
   </style>
@@ -96,6 +107,8 @@
             </a>
           </div>
         </div>
+        <div class="p-special__text">最大50万円相当<span>が</span>無料<span>になります。</span></div>
+        <p class="p-special__subtext">このチャンス、絶対に見逃せない。<br class="sp">ぜひご応募を！</p>
         <div class="p-mainview__copy"><span class="p-mainview__color">挙式をする夢</span><span class="p-mainview__small">を</span><span class="p-mainview__color">叶えたい</span>、<br>すべてのカップルに贈る</div>
         <div class="p-mainview__text">※30名以上の披露宴またはパーティーをされる方に限ります。<br class="u-mobile"><span>※披露宴、または、パーティー費用は含まれておりません。</span></div>
       </div>
@@ -109,7 +122,6 @@
             <div class="p-special__ribon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/special-ribon.png" alt="<?php bloginfo('title'); ?>">
             </div>
-            <div class="p-special__text">最大50万円相当<span>が</span>無料<span>になります。</span></div>
             <div class="p-special__items">
                 <div class="p-special__item p-special-card">
                     <div class="p-special-card__ribon">
