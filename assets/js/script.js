@@ -172,7 +172,7 @@ jQuery(function ($) {
 // カウントダウンタイマー
 let countdown = setInterval(function () {
   const now = new Date(); //今の日時
-  const target = new Date("2025/9/30 23:59:59"); //ターゲット日時を取得
+  const target = new Date("2025/10/15 23:59:59"); //ターゲット日時を取得
   let remainTime = target - now; //差分を取る（ミリ秒で返ってくる）
 
   //指定の日時を過ぎていたら処理をしない
@@ -202,7 +202,7 @@ let countdown = setInterval(function () {
 // カウントダウンタイマー
 let countdown02 = setInterval(function () {
   const now = new Date(); // 今の日時
-  const target = new Date("2025/10/15 23:59:59"); // ターゲット日時を取得
+  const target = new Date("2025/10/31 23:59:59"); // ターゲット日時を取得
   let remainTime = target - now; // 差分を取る（ミリ秒で返ってくる）
 
   // 指定の日時を過ぎていたら処理をしない
