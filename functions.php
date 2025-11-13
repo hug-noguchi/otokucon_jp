@@ -274,7 +274,7 @@ function autoback_my_mail_hokkaido($Mail_raw, $values, $Data)
 		$Mail_raw->to = 'miura@bellco.co.jp,hatanaka@bellclassic.co.jp,whitepark@tea.ocn.ne.jp,tomakomai@bellclassic.co.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,ebisawa@hershe.co.jp,noguchi_ke@hershe.jp,tanida_ch@hershe.jp';
 	} else if ($Data->get('radio-name') == 'アールベルアンジェ札幌') {
-		$Mail_raw->to = 'miura@bellco.co.jp';
+		$Mail_raw->to = 'miura@bellco.co.jp,mogi@bellclassic.co.jp,lavert@bellclassic.co.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,ebisawa@hershe.co.jp,noguchi_ke@hershe.jp,tanida_ch@hershe.jp';
 	}
 	return $Mail_raw;
