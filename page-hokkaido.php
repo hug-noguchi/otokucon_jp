@@ -803,13 +803,16 @@
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.fatNav.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         (function() {
             $.fatNav();
         }());
     </script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js?ver=1.0.13"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
   </main>
 
 <?php get_footer("hokkaido"); ?>
