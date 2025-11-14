@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="p-mainview__copy"><span class="p-mainview__color">挙式をする夢</span><span class="p-mainview__small">を</span><span class="p-mainview__color">叶えたい</span>、<br>すべてのカップルに贈る</div>
-        <div class="p-mainview__text">※30名以上（アールベルアンジェ札幌は40名以上）の披露宴またはパーティーをされる方に限ります。アールベルアンジェ札幌<br class="u-mobile"><span>※披露宴、または、パーティー費用は含まれておりません。</span></div>
+        <div class="p-mainview__text">※30名以上（アールベルアンジェ札幌は40名以上）の披露宴またはパーティーをされる方に限ります。<br class="u-mobile"><span>※披露宴、または、パーティー費用は含まれておりません。</span></div>
       </div>
       <section id="special_favor" class="p-special l-special">
         <div class="p-special__inner l-inner">
@@ -190,7 +190,7 @@
             <div class="p-special__text">最大70万円相当<span>が</span>無料<span>になります。</span></div>
             <p class="p-special__subtext">このチャンス、絶対に見逃せない。ぜひご応募を！</p>
             <p class="p-special__foot">
-                ※30名以上（アールベルアンジェ札幌は40名以上）の披露宴またはパーティーをされる方に限ります。アールベルアンジェ札幌<br>
+                ※30名以上（アールベルアンジェ札幌は40名以上）の披露宴またはパーティーをされる方に限ります。<br>
                 ※披露宴、または、パーティー費用は含まれておりません。<br>
                 ※一部地域によって特典の内容・割引金額が異なります。
             </p>
