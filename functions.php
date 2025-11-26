@@ -238,10 +238,10 @@ function add_mwform_validation_rule($Validation, $data) {
 		$Mail_raw->to = 'miura@bellco.co.jp,kondo@bellclassic.co.jp,royal-himeji@bellclassic.co.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,ebisawa@hershe.co.jp,noguchi_ke@hershe.jp,tanida_ch@hershe.jp';
 	} else if ($Data->get('radio-name') == 'アール・ベル・アンジェ奈良') {
-		$Mail_raw->to = 'miura@bellco.co.jp,nara@bellclassic.co.jp,honjo@bellclassic.co.jp';
+		$Mail_raw->to = 'miura@bellco.co.jp,nara@bellclassic.co.jp,ozaki@bellclassic.co.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,ebisawa@hershe.co.jp,noguchi_ke@hershe.jp,tanida_ch@hershe.jp';
 	} else if ($Data->get('radio-name') == 'アール・ベル・アンジェ チャペル嵯峨野') {
-		$Mail_raw->to = 'miura@bellco.co.jp,sagano@bellclassic.co.jp,ozaki@bellclassic.co.jp';
+		$Mail_raw->to = 'miura@bellco.co.jp,sagano@bellclassic.co.jp,honjo@bellclassic.co.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,ebisawa@hershe.co.jp,noguchi_ke@hershe.jp,tanida_ch@hershe.jp';
 	} else if ($Data->get('radio-name') == 'ベルクラシック空港') {
 		$Mail_raw->to = 'miura@bellco.co.jp,kamiryo@bellclassic.co.jp,kuko@bellclassic.co.jp';
@@ -285,7 +285,7 @@ add_filter('mwform_admin_mail_mw-wp-form-944', 'autoback_my_mail_hokkaido', 10, 
 function autoback_my_mail_family($Mail_raw, $values, $Data)
 {
 	if ($Data->get('radio-name') == 'ガーデンテラス東山') {
-		$Mail_raw->to = 'miura@bellco.co.jp,garden-terrace@gt-higashiyama.jp';
+		$Mail_raw->to = 'miura@bellco.co.jp,hirotaka-sakuragi@bellclassic.co.jp,garden-terrace@gt-higashiyama.jp';
 		$Mail_raw->cc = 'mayu@hershe.co.jp,higa_sa@hershe.jp,ebisawa@hershe.co.jp,noguchi_ke@hershe.jp,tanida_ch@hershe.jp';
 	} else if ($Data->get('radio-name') == 'アールベルアンジェ四日市') {
 		$Mail_raw->to = 'miura@bellco.co.jp,ueda@bellclassic.co.jp,yokkaichi@bellclassic.co.jp';
