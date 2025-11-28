@@ -1333,6 +1333,12 @@ select::-ms-expand {
   color: #036eb8;
 }
 
+.p-contact__foot.notice_ttl {
+  color: #c63954;
+  font-weight: bold;
+  text-align: center;
+}
+
 .p-contact__button {
   margin-top: 20px;
   margin-top: 1.25rem;
