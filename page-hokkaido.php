@@ -3,10 +3,10 @@
   <style>
     @media screen and (max-width: 767px) {
       #lp-box {
-        height: 88px;
+        height: 120px;
       }
       #lp-box .p-target {
-        bottom: -30px;
+        bottom: -0;
       }
       .p-footer {
         padding: 0px 0 5.5125rem 0;
@@ -23,6 +23,7 @@
 
   <div class="countdown-box" id="lp-box">
     <?php get_template_part('template/target'); ?>
+    <?php get_template_part('template/countdown'); ?>
   </div>
 
   <main>
