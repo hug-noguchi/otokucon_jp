@@ -1,11 +1,11 @@
 <?php
 // 日付切替条件
-if (strtotime(date('Y-m-d H:i')) < strtotime('2025-11-30 15:00')) {
-    $month = 11;
-    $day   = 30;
-} else {
+if (strtotime(date('Y-m-d H:i')) < strtotime('2025-12-15 15:00')) {
     $month = 12;
     $day   = 15;
+} else {
+    $month = 12;
+    $day   = 31;
 }
 
 // 曜日計算
