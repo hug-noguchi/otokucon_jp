@@ -1,0 +1,80 @@
+(function() {
+    const STORAGE_KEY = "saved_url_params";
+    const EXPIRE_MS = 60 * 1000; // 1分
+
+    function getUrlParams(url) {
+        const u = new URL(url, window.location.origin);
+        const params = {};
+        u.searchParams.forEach((v, k) => { params[k] = v; });
+        return params;
+    }
+
+    function saveParams(params) {
+        if (!params || Object.keys(params).length === 0) return;
+        const data = {
+            params: params,
+            timestamp: Date.now()
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadParams() {
+        const data = localStorage.getItem(STORAGE_KEY);
+        if (!data) return null;
+        try {
+            const obj = JSON.parse(data);
+            if (Date.now() - obj.timestamp > EXPIRE_MS) return null;
+            return obj.params;
+        } catch {
+            return null;
+        }
+    }
+
+    function applyParams(url) {
+        const saved = loadParams();
+        if (!saved) return url;
+        const u = new URL(url, window.location.origin);
+        Object.keys(saved).forEach(k => {
+            u.searchParams.set(k, saved[k]);
+        });
+        return u.toString();
+    }
+
+    const originalReplaceState = history.replaceState;
+    const originalPushState = history.pushState;
+
+    history.replaceState = function(state, title, url) {
+        if (url) {
+            const params = getUrlParams(url);
+            if (Object.keys(params).length > 0) saveParams(params);
+            const newUrl = applyParams(url);
+            if (newUrl !== window.location.href) {
+                return originalReplaceState.call(history, state, title, newUrl);
+            }
+        }
+        return originalReplaceState.apply(history, arguments);
+    };
+
+    history.pushState = function(state, title, url) {
+        if (url) {
+            const params = getUrlParams(url);
+            if (Object.keys(params).length > 0) saveParams(params);
+            const newUrl = applyParams(url);
+            if (newUrl !== window.location.href) {
+                return originalPushState.call(history, state, title, newUrl);
+            }
+        }
+        return originalPushState.apply(history, arguments);
+    };
+
+    // ページロード時
+    const initialParams = getUrlParams(window.location.href);
+    if (Object.keys(initialParams).length > 0) {
+        saveParams(initialParams);
+    } else {
+        const newUrl = applyParams(window.location.href);
+        if (newUrl !== window.location.href) {
+            history.replaceState(history.state, document.title, newUrl);
+        }
+    }
+})();
