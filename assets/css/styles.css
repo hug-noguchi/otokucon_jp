@@ -3113,6 +3113,12 @@ a:hover {
 }
 
 /*カウントダウンタイマー*/
+@media screen and (min-width: 769px) {
+  .countdown,
+  .countdown02 {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .countdown-box {
     background: rgba(3, 3, 3, 0.8);
