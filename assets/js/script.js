@@ -170,9 +170,13 @@ jQuery(function ($) {
 });
 
 // カウントダウンタイマー
+const isAfter15 = new Date() >= new Date("2026/01/16 00:00:00");
+document.getElementById("countdownArea").style.display = isAfter15 ? "none" : "block";
+document.getElementById("countdownArea02").style.display = isAfter15 ? "block" : "none";
+
 let countdown = setInterval(function () {
   const now = new Date(); //今の日時
-  const target = new Date("2025/12/31 23:59:59"); //ターゲット日時を取得
+  const target = new Date("2026/1/15 23:59:59"); //ターゲット日時を取得
   let remainTime = target - now; //差分を取る（ミリ秒で返ってくる）
 
   //指定の日時を過ぎていたら処理をしない
