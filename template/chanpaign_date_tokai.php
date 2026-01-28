@@ -1,13 +1,13 @@
 <?php
 $current_year = (int)date('Y');
 
-if (strtotime(date('Y-m-d H:i')) < strtotime($current_year . '-1-15 15:00')) {
+if (strtotime(date('Y-m-d H:i')) < strtotime($current_year . '-1-31 15:00')) {
     $month = 1;
-    $day   = 15;
+    $day   = 31;
     $target_year = $current_year;
 } else {
     $month = 1;
-    $day   = 31;
+    $day   = 28;
     $target_year = $current_year + 1;
 }
 
