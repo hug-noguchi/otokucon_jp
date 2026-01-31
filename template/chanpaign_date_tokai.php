@@ -6,7 +6,7 @@ if (strtotime(date('Y-m-d H:i')) < strtotime($current_year . '-1-31 15:00')) {
     $day   = 31;
     $target_year = $current_year;
 } else {
-    $month = 1;
+    $month = 2;
     $day   = 28;
     $target_year = $current_year + 1;
 }
