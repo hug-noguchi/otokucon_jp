@@ -389,7 +389,7 @@ get_header(); ?>
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal03">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img03.jpg" alt="ベルクラシック神戸">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kobe01.jpg" alt="ベルクラシック神戸">
                         </a>
                         <p class="area">兵庫県神戸市</p>
                         <div class="p-wedding-card__body">
@@ -399,6 +399,7 @@ get_header(); ?>
                     </div>
                     <!-- モーダル（ポップアップ）の内容 -->
                     <div class="p-wedding-card__popUp js_modalWrap" data-modal-cont="modal03">
+                    <!-- <div class="p-wedding-card__popUp js_modalWrap" data-modal-cont="modal03"> -->
                         <div class="p-wedding-card__bg js_modalBG"></div>
                         <div class="p-wedding-card__cotainer">
                             <span class="p-wedding-card__closebtn js_modalContInner"></span>
