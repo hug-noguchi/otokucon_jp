@@ -755,8 +755,14 @@ select::-ms-expand {
   background: -ms-linear-gradient(90deg, rgba(247, 138, 158, 0.99608) 0%, rgb(245, 111, 135) 50%, rgb(254, 152, 139) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(247, 138, 158, 0.99608)), color-stop(50%, rgb(245, 111, 135)), to(rgb(254, 152, 139)));
   background-image: linear-gradient(90deg, rgba(247, 138, 158, 0.99608) 0%, rgb(245, 111, 135) 50%, rgb(254, 152, 139) 100%);
-  -webkit-transition: opacity 0.2s, color 0.2s, border-color 0.2s;
-  transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+  -webkit-transition:
+    opacity 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  transition:
+    opacity 0.2s,
+    color 0.2s,
+    border-color 0.2s;
   border-radius: 1.25rem;
 }
 
@@ -959,8 +965,14 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-contact-confirm__inner .p-contact-button .p-contact-button__other .p-contact-button__submit {
     margin: 0;
-    -webkit-transition: opacity 0.2s, color 0.2s, border-color 0.2s;
-    transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+    -webkit-transition:
+      opacity 0.2s,
+      color 0.2s,
+      border-color 0.2s;
+    transition:
+      opacity 0.2s,
+      color 0.2s,
+      border-color 0.2s;
   }
 }
 
@@ -1840,7 +1852,9 @@ select::-ms-expand {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  transition:
+    transform 0.2s,
+    -webkit-transform 0.2s;
 }
 
 .p-qa-media__inner.is-active .p-qa-media__head .p-qa-media__btn::after {
@@ -2510,8 +2524,14 @@ select::-ms-expand {
   padding: 0.1875rem 0.5rem;
   background-color: #d66e9c;
   border: 1px solid transparent;
-  -webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  -webkit-transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .p-wedding-card__btn:hover {
@@ -2722,8 +2742,14 @@ select::-ms-expand {
   background: -ms-linear-gradient(90deg, rgba(247, 138, 158, 0.99608) 0%, rgb(245, 111, 135) 50%, rgb(254, 152, 139) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(247, 138, 158, 0.99608)), color-stop(50%, rgb(245, 111, 135)), to(rgb(254, 152, 139)));
   background-image: linear-gradient(90deg, rgba(247, 138, 158, 0.99608) 0%, rgb(245, 111, 135) 50%, rgb(254, 152, 139) 100%);
-  -webkit-transition: opacity 0.2s, color 0.2s, border-color 0.2s;
-  transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+  -webkit-transition:
+    opacity 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  transition:
+    opacity 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .p-wedding-card__modalForm::after {
@@ -2856,42 +2882,8 @@ select::-ms-expand {
   margin-left: 0 !important;
 }
 
-.swiper-button-prev {
-  position: absolute;
-  z-index: 100;
-}
-.swiper-button-prev span {
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-  position: absolute;
-  top: -55%;
-  left: 2%;
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  transform: rotate(-45deg);
-}
-
-.swiper-button-next {
-  position: absolute;
-  z-index: 100;
-}
-.swiper-button-next span {
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-  position: absolute;
-  top: -55%;
-  right: 2%;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(45deg);
-}
-@media screen and (max-width: 767px) {
-  .swiper-button-prev span,
-  .swiper-button-next span {
-    top: -60%;
-  }
+.swiper-navigation-icon {
+  display: none;
 }
 
 .swiper-pagination-bullets {
@@ -3209,7 +3201,9 @@ a:hover {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  transition:
+    transform 0.2s,
+    -webkit-transform 0.2s;
 }
 
 .area {
