@@ -374,3 +374,27 @@ function custom_lp_title( $title ) {
 
 // フォーム送信後の処理を追加
 add_action('mwform_after_send_mail_mw-wp-form-611', 'custom_form_after_send', 10, 3);
+
+// 2026/3/27追加
+/** * MW WP Form (key="7") の送信データを Make(Webhook) へ飛ばす
+*/
+add_action( 'mwform_after_send_admin_7', function( $Data ) {
+// 【重要】ここにMakeでコピーしたURLを貼り付け
+$webhook_url = 'https://hook.us1.make.com/kje17lk74n651a6kqg5ebsbettbxnj2l';
+
+// 送信データを整理してMakeに送る
+    $body = array(
+        'send_date' => date('Y-m-d H:i:s'), // 送信日時
+        'shikijo'   => $Data->get( 'ご選択式場' ), // フォーム内の項目名に合わせてください
+        'name'      => $Data->get( 'お名前' ),
+        'email'     => $Data->get( 'メールアドレス' ),
+        // 他にも送りたい項目があればここに追加できます
+    );
+
+		wp_remote_post( $webhook_url, array(
+        'method'      => 'POST',
+        'headers'     => array('Content-Type' => 'application/json'),
+        'body'        => json_encode($body),
+        'timeout'     => 15,
+    ));
+});
