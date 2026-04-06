@@ -374,7 +374,7 @@
         <h2 class="p-case__title reason_title">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-title.png" alt="reason">
         </h2>
-        <p class="p-case__copy reason_lead">アール・ベル・アンジェ奈良が<br class="sp"><span class="dots">選</span><span class="dots">ば</span><span class="dots">れ</span><span class="dots">る</span><span class="reason_lead_pink"><span class="reason_lead_emphasis">3</span>つの理由</span></p>
+        <p class="p-case__copy reason_lead">アールベルアンジェ奈良が<br class="sp"><span class="dots">選</span><span class="dots">ば</span><span class="dots">れ</span><span class="dots">る</span><span class="reason_lead_pink"><span class="reason_lead_emphasis">3</span>つの理由</span></p>
       </div>
       <div class="reason_list">
         <ul>
