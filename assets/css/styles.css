@@ -2707,6 +2707,12 @@ select::-ms-expand {
   margin-top: 13px;
   margin-top: 0.8125rem;
 }
+
+.p-wedding-card__modaltext.modal-lelien {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
 @media screen and (min-width: 768px) {
   .p-wedding-card__other {
     margin-top: 3.8125rem;
