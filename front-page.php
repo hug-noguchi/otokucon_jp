@@ -48,9 +48,9 @@ get_header(); ?>
     }
   }
   .p-wedding-card__modaltext.modal-lelien {
-  padding-left: 1em;
-  text-indent: -1em;
-}
+    padding-left: 1em;
+    text-indent: -1em;
+    }
 </style>
 
 <div class="countdown-box sp">
@@ -247,7 +247,7 @@ get_header(); ?>
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal01">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img01.jpg" alt="ガーデンテラス東山">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama01.jpg" alt="ガーデンテラス東山">
                         </a>
                         <p class="area">愛知県名古屋市</p>
                         <div class="p-wedding-card__body">
@@ -268,9 +268,6 @@ get_header(); ?>
                                         </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama02.jpg" alt="ガーデンテラス東山">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama03.jpg" alt="ガーデンテラス東山">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -635,7 +632,7 @@ get_header(); ?>
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal08">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img08.jpg" alt="ル・リアン大阪">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko02.jpg" alt="ル・リアン大阪">
                         </a>
                         <p class="area">大阪府池田市</p>
                         <div class="p-wedding-card__body">
@@ -652,10 +649,10 @@ get_header(); ?>
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko01.jpg" alt="ル・リアン大阪">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko02.jpg" alt="ル・リアン大阪">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko02.jpg" alt="ル・リアン大阪">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko01.jpg" alt="ル・リアン大阪">
                                         </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko03.jpg" alt="ル・リアン大阪">

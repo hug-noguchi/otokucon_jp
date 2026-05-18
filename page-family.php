@@ -279,7 +279,7 @@
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal01">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-img01.jpg" alt="ガーデンテラス東山">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama01.jpg" alt="ガーデンテラス東山">
                         </a>
                         <div class="p-wedding-card__body">
                             <h3 class="p-wedding-card__title">ガーデンテラス東山</h3>
@@ -299,9 +299,6 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama02.jpg" alt="ガーデンテラス東山">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/higashiyama03.jpg" alt="ガーデンテラス東山">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -608,7 +605,7 @@
                 <div class="p-wedding__item p-wedding-card">
                     <div class="js_modalBtnCont" data-modal-btn="modal08">
                         <a class="p-wedding-card__ribon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/wedding-img08.jpg" alt="ル・リアン大阪">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko02.jpg" alt="ル・リアン大阪">
                         </a>
                         <div class="p-wedding-card__body">
                             <h3 class="p-wedding-card__title">ル・リアン大阪</h3>
@@ -624,10 +621,10 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/wedding-img08.jpg" alt="ル・リアン大阪">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko02.jpg" alt="ル・リアン大阪">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko02.jpg" alt="ル・リアン大阪">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/family/wedding-img08.jpg" alt="ル・リアン大阪">
                                         </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kuko03.jpg" alt="ル・リアン大阪">
